@@ -1,0 +1,97 @@
+
+.navbar {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ccc;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.vertical-menu {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.vertical-menu .nav-link {
+  padding: 0.5rem 1rem;
+  color: #000;
+}
+.vertical-menu .nav-link:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.vertical-menu .nav-item + .nav-item {
+  border-top: 1px solid #ccc;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+.vertical-menu .nav-item:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+.vertical-menu .nav-item:not(:last-child)::after {
+ display: block;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+}
+.main-content {
+  background-color: #fff8e1; /* Cream color for non-header section */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.main-content hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+.extra-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1 1 calc(33.33% - 20px); /* Adjust 20px according to the gap */
+  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+
+.extra-content > div {
+  width: calc(33.33% - 20px); /* Adjust width to accommodate margins */
+  margin-bottom: 10px; /* Margin between divs */
+  border: 1px solid #ccc; /* Add border to each div */
+  border-radius: 0.5rem; /* Add border radius to each div */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.extra-content button {
+  margin-right: 0.5rem; /* Add margin between button and other content */
+}
+.extra-content .value {
+  margin-left: auto; /* Push the value to the right */
+}
+.plus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 235px; /* Adjust to your requirement */
+  border: 1px solid #000; /* For visualization */
+}
+
+.plus-icon {
+  font-size: 24px; /* Adjust the size of the icon */
+  margin-left: 12px;
+}
+.plus-icon-container{
+   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  cursor: pointer;
+}
